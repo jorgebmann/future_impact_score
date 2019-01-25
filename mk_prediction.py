@@ -82,7 +82,7 @@ def mk_prediction(test_data):
         return padded
 
     # loading tokenizer
-    with open('/mnt/hdd/fis/P/api/pred/tokenizer.pickle', 'rb') as handle:
+    with open('tokenizer.pickle', 'rb') as handle:
         tokenizer = pickle.load(handle)
 
     length = 382
