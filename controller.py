@@ -15,7 +15,7 @@ app = Flask(__name__)
 
 app.secret_key = b'xb7\x8a\xcb\xfaa\xb7\xa7:\xe1\x05\xe3-i|\xa5/'
 
-@app.route('/pred', methods=['GET', 'POST'])
+@app.route('/, methods=['GET', 'POST'])
 
 def index():
     form = InputForm(request.form)
