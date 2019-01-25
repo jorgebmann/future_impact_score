@@ -1,0 +1,43 @@
+
+<!doctype html>
+<title>{% block title %}{% endblock %} - Future Impact Score API</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<H1>Future Impact Score API</H1>
+<form method=post action="">
+   {{form.hidden_tag()}}
+   <dl>
+      <dt>Publication date: {{ form.dop }} (If your manuscript is not published yet: Insert current date) <br />
+      <br />
+      <dt>Title: {{ form.title(cols="60", rows="1")  }} <br />
+      <br />
+      <dt>Please insert your abstract here (min. 200 and max. 400 words):  <br />
+      <br />
+      <dd>{{ form.r(cols="60", rows="30") }}  <br />
+      <br />
+      <br />
+      <dt>Please provide your field of research:  <br />
+      <br />
+      <br />
+      <dd>{{ check.example }}  <br />
+      <br />
+   </dl>
+   <p>
+  <input type=submit value=Calculate>
+
+{% if s != None %}
+   <dl>
+      <H3>Your Future Impact Score is: {{s}} </H3> <br />
+      <br />
+      <dt>Legend of Future Impact Score: 
+      <dt>Within the next two years the paper will receive:
+      <dt>very low = up to 2 citations 
+      <dt>low = up to 5 citations 
+      <dt>intermediate = up to 10 citations 
+      <dt>high = up to 20 citations 
+      <dt>very high = more than 20 citations 
+   </dl>
+   <p>
+{% endif %}
+</form>
+
+
