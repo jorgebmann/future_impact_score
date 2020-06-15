@@ -3,7 +3,7 @@
 """
 Created on Tue Jan 15 14:25:54 2019
 
-@author: jorge
+@author: Jörg Bahlmann
 """
 
 from flask import Flask, render_template, request
@@ -13,7 +13,7 @@ from model import InputForm, SimpleForm
 
 app = Flask(__name__)
 
-app.secret_key = b'xb7\x8a\xcb\xfaa\xb7\xa7:\xe1\x05\xe3-i|\xa5/'
+app.secret_key = b'xxxx'
 
 @app.route('/, methods=['GET', 'POST'])
 
