@@ -4,7 +4,7 @@ Predict the number of future citations for research articles.
 
 ## Installation
 
-Deploy this reprosite to a cloud computing or local unix platform.
+Deploy this repository to a cloud computing or local unix platform.
 
 ```
 git clone https://github.com/jorgebmann/future_impact_score
